@@ -1,5 +1,5 @@
 - [x] Boilerplate
-- [] Sky
+- [x] Sky
 - [] Textures and images
 - [] Ground
 - [] Player
