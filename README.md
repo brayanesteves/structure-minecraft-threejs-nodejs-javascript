@@ -2,6 +2,7 @@
 - [x] Sky
 - [x] Textures and images
 - [x] Ground
+- [x] Keyboard inputs
 - [] Player
 - [] First person view
 - [] Gravity
