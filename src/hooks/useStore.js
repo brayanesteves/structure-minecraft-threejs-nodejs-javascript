@@ -1,11 +1,19 @@
 import create     from 'zustand';
 import { nanoid } from 'nanoid';
 
+// ======================================== //
+/**
+ * Store world
+ */
 const getLocalStorage = (key) => JSON.parse(window.localStorage.getItem(key))
 const setLocalStorage = (key, value) => window.localStorage.setItem(key, JSON.stringify(value))
+// ======================================== //
 
 export const useStore = create((set) => ({
        texture: 'dirt',
+       /**
+        * Store cubes
+        */
        cubes: getLocalStorage('cubes') || [],
         /*cubes: [
             // Test cubes show
@@ -46,10 +54,17 @@ export const useStore = create((set) => ({
             texture
         }));
     },
-     saveWorld: () => {
+    /**
+     * Save wolrd
+     */
+    saveWorld: () => {
         set((prev) => {
 			setLocalStorage('cubes', prev.cubes)
-		})
-     },
-    resetWorld: () => {}
+		});
+    },
+    resetWorld: () => {
+        set(() => ({
+			cubes: []
+		}));
+    }
 }));

@@ -11,3 +11,4 @@ body                           { position: fixed; overflow: hidden; overscroll-b
 .cursor                        { color:white; }
 .texture-selector              { transform: scale(5); }
 .texture-selector img.activate { border:2px solid red; }
+.menu                          { top:0px; left:10px; }
