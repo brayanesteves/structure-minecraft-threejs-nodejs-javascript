@@ -11,6 +11,7 @@
 - [x] Cubes
 - [x] Adding cubes
 - [x] Removing cubes
-- [] Cube type selector
+- [x] Cube type selector
+- [] Solved Bug - Cube type selector
 - [] Save world in localstorage
 - [] Build a house
