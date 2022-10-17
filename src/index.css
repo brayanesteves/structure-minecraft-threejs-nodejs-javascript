@@ -7,3 +7,5 @@ body      { position: fixed; overflow: hidden; overscroll-behavior-y: none; font
 .fixed    { position: fixed; }
 .relative { position: relative; }
 .absolute { position: absolute; }
+.centered { /*width:500px; height:500px; background:hotpink;*/ top:50%; left:50%; transform: translate(-50%, -50%); }
+.cursor   { color:white; }

@@ -56,7 +56,7 @@ export const Player = () => {
         direction.subVectors(frontVector, sideVector).normalize().multiplyScalar(SPEED).applyEuler(camera.rotation);
         api.velocity.set(direction.x, vel.current[1], direction.z);
 
-        if(jump && Math.abs(velocity.current[1]) < 0.05) {
+        if(jump && Math.abs(vel.current[1]) < 0.05) {
             /**
              * Velocity jump
              */
