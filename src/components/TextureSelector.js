@@ -54,7 +54,7 @@ export const TextureSelector = () => {
         <div className='absolute centered texture-selector'>
             { Object.entries(images).map(([k, src]) => {
                 return (
-                    <img alt={k} key={k} src={src} className={`${k === activateTexture ? 'active' : ''}`} />
+                    <img alt={k} key={k} src={src} className={`${k === activateTexture ? 'activate' : ''}`} />
                 );
             }) }
         </div>
