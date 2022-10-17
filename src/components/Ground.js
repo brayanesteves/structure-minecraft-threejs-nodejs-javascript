@@ -15,9 +15,13 @@ export const Ground = () => {
      * Show image ground
      * 'Image' assets/img/jpg/grass.jpg
      */
-    groundTexture.magFilter = NearestFilter;
-    groundTexture.wrapS     = RepeatWrapping;
-    groundTexture.wrapT     = RepeatWrapping;
+    //groundTexture.magFilter = NearestFilter;
+    /**
+     * @dir objects/textures.js
+     */
+    //groundTexture.wrapS     = RepeatWrapping;
+    //groundTexture.wrapT     = RepeatWrapping;
+    
     groundTexture.repeat.set(100, 100);
 
     return (
